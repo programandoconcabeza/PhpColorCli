@@ -1,0 +1,21 @@
+{
+    "name": "programandoconcabeza/php-color-cli",
+    "description": "show text in php console line interface with colors",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "programandoconcabeza",
+            "email": "programandoconcabeza@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ProgramandoConCabeza\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4"
+    }
+}
