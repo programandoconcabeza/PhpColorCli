@@ -6,16 +6,16 @@ namespace ProgramandoConCabeza;
 
 final class PHPColorCli
 {
-    use Colors;
+    use ColorsTrait;
 
     // Returns colored string
-    public static function getColoredString($string, $foreground_color = null, $background_color = null, $option = null): string
+    public static function getColoredString($string, $text_color = null, $background_color = null, $option = null): string
     {
         $colored_string = "";
 
         // Check if given foreground color found
-        if ($foreground_color && self::returnColor($foreground_color) !== null) {
-            $colored_string .= "\033[" . self::returnColor($foreground_color) . "m";
+        if ($text_color && self::returnColor($text_color) !== null) {
+            $colored_string .= "\033[" . self::returnColor($text_color) . "m";
         }
         // Check if given background color found
         if ($background_color && self::returnBackground($background_color) !== null) {
