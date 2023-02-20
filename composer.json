@@ -2,6 +2,7 @@
     "name": "programandoconcabeza/php-color-cli",
     "description": "show text in php console line interface with colors",
     "type": "library",
+    "version": "1.0.0",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
